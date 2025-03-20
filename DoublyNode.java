@@ -3,11 +3,11 @@ public class DoublyNode {
     String bookTitle, bookAuthor;
     int bookID;
 
-    DoublyNode(int bookID, String bookTitle, String bookAuthor){
-        this.prev = null;
+    DoublyNode(DoublyNode prev, int bookID, String bookTitle, String bookAuthor, DoublyNode next){
+        this.prev = prev;
         this.bookID = bookID;
         this.bookTitle = bookTitle;
         this.bookAuthor = bookAuthor;
-        this.next = null;
+        this.next = next;
     }
 }
